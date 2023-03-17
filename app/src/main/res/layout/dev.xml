@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#8977ad
+"
+        android:text="개발자 소개"
+        android:gravity="center"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ohjonghyeon"
+        android:layout_marginVertical="60dp"/>
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="오종현"
+        android:layout_toRightOf="@+id/image"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="16dp"/>
+    <TextView
+        android:id="@+id/git_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="https://fivebellhyun.github.io/web-portfolio/#/"
+        android:layout_toRightOf="@+id/image"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignBottom="@+id/image"/>
+    <TextView
+        android:id="@+id/role"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="개발 총괄"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentRight="true"/>
+
+#------------권민선
+    <ImageView
+        android:layout_marginVertical="200dp"
+        android:id="@+id/image2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/minseon" />
+    <TextView
+        android:id="@+id/name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="권민선"
+        android:layout_toRightOf="@+id/image2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_alignTop="@+id/image2"/>
+    <TextView
+        android:id="@+id/git_link2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="https://github.com/mskwon02"
+        android:layout_toRightOf="@+id/image2"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignBottom="@+id/image2"/>
+
+    <TextView
+        android:id="@+id/role2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:text="개발"
+        android:layout_alignParentRight="true"/>
+
+#-------구레건----->
+    <ImageView
+        android:layout_marginVertical="350dp"
+        android:id="@+id/image3"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/reagankoo" />
+    <TextView
+        android:id="@+id/name3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="구래건"
+        android:layout_toRightOf="@+id/image3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_alignTop="@+id/image3"/>
+    <TextView
+        android:id="@+id/git_link3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="https://github.com/reagan99"
+        android:layout_toRightOf="@+id/image3"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignBottom="@+id/image3"/>
+
+    <TextView
+        android:id="@+id/role3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="360dp"
+        android:text="개발"
+        android:layout_alignParentRight="true"/>
+
+    #-------정재서----->
+    <ImageView
+        android:layout_marginVertical="500dp"
+        android:id="@+id/image4"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/jaseo" />
+    <TextView
+        android:id="@+id/name4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="정재서"
+        android:layout_toRightOf="@+id/image4"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_alignTop="@+id/image4"/>
+    <TextView
+        android:id="@+id/git_link4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="https://github.com/reagan99"
+        android:layout_toRightOf="@+id/image4"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignBottom="@+id/image4"/>
+
+    <TextView
+        android:id="@+id/role4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="510dp"
+        android:text="개발"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>
