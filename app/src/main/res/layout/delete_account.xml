@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="회원탈퇴"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/text_dark"
             android:textSize="24dp"
             android:textStyle="bold" />
     </RelativeLayout>
@@ -44,7 +44,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:text="탈퇴 시 전부 사라져요"
-                android:textColor="@color/white"
+                android:textColor="@color/text_dark"
                 android:gravity="center"
                 android:textSize="30dp"/>
 
@@ -62,7 +62,7 @@
                     android:layout_marginVertical="15dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
-                    android:background="@drawable/round_back_white10_16"
+                    android:background="@drawable/round_back_white45_16"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="35dp">
@@ -82,7 +82,7 @@
                         android:gravity="center"
                         android:text="야무지게 기록한 가계부"
                         android:textStyle="bold"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/text_dark" />
 
                 </LinearLayout>
 
@@ -93,7 +93,7 @@
                     android:layout_marginVertical="15dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
-                    android:background="@drawable/round_back_white10_16"
+                    android:background="@drawable/round_back_white45_16"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="35dp">
@@ -113,7 +113,7 @@
                         android:gravity="center"
                         android:text="깔삼히 정리된 지출 통계"
                         android:textStyle="bold"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/text_dark" />
 
                 </LinearLayout>
 
@@ -124,7 +124,7 @@
                     android:layout_marginVertical="15dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
-                    android:background="@drawable/round_back_white10_16"
+                    android:background="@drawable/round_back_white45_16"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="35dp">
@@ -145,7 +145,7 @@
                         android:text="한땀 한땀 적은 일기"
                         android:textStyle="bold"
                         android:textSize="15sp"
-                        android:textColor="@color/white"
+                        android:textColor="@color/text_dark"
                         />
 
                 </LinearLayout>
@@ -159,7 +159,7 @@
                 android:layout_marginTop="30dp"
                 android:gravity="center"
                 android:text="그래도 탈퇴하시겠어요?"
-                android:textColor="@color/white"
+                android:textColor="@color/text_dark"
                 android:textSize="25dp"
 
                 />
@@ -188,7 +188,7 @@
                     android:background="@drawable/round_back_purple200_100"
                     android:text="탈퇴하기"
                     android:textStyle="bold"
-                    android:textColor="@color/white"
+                    android:textColor="@color/text_dark"
                     android:textSize="15sp" />
             </LinearLayout>
 
