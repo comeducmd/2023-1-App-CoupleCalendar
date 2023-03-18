@@ -14,14 +14,15 @@
             android:layout_height="40dp"
             android:src="@drawable/back_btn"
             android:padding="8dp"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="커플 끊기"
             android:layout_centerInParent="true"
-            android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:textSize="24dp"/>
+            android:text="커플 끊기"
+            android:textColor="@color/text_dark"
+            android:textSize="24dp"
+            android:textStyle="bold" />
     </RelativeLayout>
 
     <!--전체 투명 박스-->
@@ -31,7 +32,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginTop="100dp"
-        android:background="@drawable/round_back_white10_16"
+        android:background="@drawable/round_back_white45_16"
         android:gravity="center"
         android:orientation="vertical"
         android:paddingBottom="20dp"
@@ -51,7 +52,7 @@
             android:layout_marginBottom="40dp"
             android:gravity="center"
             android:text="00님과의 커플 연결을\n 끊으시겠습니까?"
-            android:textColor="@color/white"
+            android:textColor="@color/text_dark"
             android:textSize="20sp"
             android:lineSpacingExtra="10dp"/>
 
@@ -79,7 +80,7 @@
                 android:background="@drawable/round_back_purple200_100"
                 android:text="연결 끊기"
                 android:textStyle="bold"
-                android:textColor="@color/white"
+                android:textColor="@color/text_dark"
 
                 android:textSize="15sp" />
         </LinearLayout>

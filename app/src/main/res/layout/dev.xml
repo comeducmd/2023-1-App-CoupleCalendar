@@ -8,8 +8,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="#8977ad
-"
+        android:background="#8977ad"
         android:text="개발자 소개"
         android:gravity="center"
         android:textSize="25dp" />

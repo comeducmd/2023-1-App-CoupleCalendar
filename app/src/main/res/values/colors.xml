@@ -8,8 +8,14 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="primary">#1B023B</color>
+    <color name="primary">#F9F1E6</color>
     <color name="secondary">#FF03DAC5</color>
+
+    <!--Text Color-->
+    <color name="text_light">#FFFFFF</color>
+    <color name="text_faded">#9899A5</color>
+    <color name="text_grey">#B3B3B3</color>
+    <color name="text_dark">#272A29</color>
 
     <color name="night_mode">#6124B1</color>
     <color name="notification">#13B2C3</color>
