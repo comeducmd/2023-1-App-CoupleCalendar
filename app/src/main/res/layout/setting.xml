@@ -18,14 +18,15 @@
             android:layout_height="40dp"
             android:src="@drawable/back_btn"
             android:padding="8dp"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Setting"
             android:layout_centerInParent="true"
+            android:text="Setting"
             android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:textSize="24dp"/>
+            android:textSize="24dp"
+            android:textStyle="bold" />
     </RelativeLayout>
 
     <ScrollView
@@ -296,8 +297,9 @@
                         android:layout_marginStart="20dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textColor="#303334"
                         android:text="탈퇴하기"
-                        android:textColor="#FFFFFF"
+
                         android:textStyle="bold"
                         android:layout_centerVertical="true"
                         android:layout_toEndOf="@+id/withdraw"/>
