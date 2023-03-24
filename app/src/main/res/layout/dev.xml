@@ -7,16 +7,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-<<<<<<< HEAD
         android:layout_height="wrap_content"
         android:padding="16dp">
-=======
-        android:layout_height="50dp"
-        android:background="#8977ad"
-        android:text="개발자 소개"
-        android:gravity="center"
-        android:textSize="25dp" />
->>>>>>> 8d08a56e014708e6fc87a6fa48b2cd53d8015a19
 
         <TextView
             android:layout_width="match_parent"
@@ -38,15 +30,13 @@
             android:orientation="vertical">
 
 
-
-<<<<<<< HEAD
             <LinearLayout
                 android:layout_width="350dp"
                 android:layout_height="120dp"
                 android:layout_marginVertical="15dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
-                android:background="@drawable/round_back_white10_16"
+                android:background="@drawable/round_back_white45_16"
                 android:gravity="left"
                 android:orientation="vertical">
 
@@ -64,7 +54,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:textStyle="bold"
                         android:layout_marginTop="12dp"
                         android:layout_marginLeft="26dp"
@@ -82,13 +72,13 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="26dp"
                         android:text="오종현"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:layout_marginLeft="52dp"
                         android:textSize="10dp"
                         android:text="https://fivebellhyun.github.io/web-portfolio/#/"
@@ -103,7 +93,7 @@
                 android:layout_marginVertical="15dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
-                android:background="@drawable/round_back_white10_16"
+                android:background="@drawable/round_back_white45_16"
                 android:gravity="left"
                 android:orientation="vertical">
 
@@ -119,7 +109,7 @@
                         <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:textStyle="bold"
                         android:layout_marginTop="12dp"
                         android:layout_marginLeft="26dp"
@@ -137,13 +127,13 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="26dp"
                         android:text="구래건"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:layout_marginLeft="52dp"
                         android:text="https://github.com/reagan99"
                         android:textStyle="bold" />
@@ -157,7 +147,7 @@
                 android:layout_marginVertical="15dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
-                android:background="@drawable/round_back_white10_16"
+                android:background="@drawable/round_back_white45_16"
                 android:gravity="left"
                 android:orientation="vertical">
 
@@ -173,7 +163,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:textStyle="bold"
                         android:layout_marginTop="12dp"
                         android:layout_marginLeft="26dp"
@@ -191,13 +181,13 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="26dp"
                         android:text="권민선"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:layout_marginLeft="52dp"
                         android:text="https://github.com/mskwon02"
                         android:textStyle="bold" />
@@ -211,7 +201,7 @@
                 android:layout_marginVertical="15dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
-                android:background="@drawable/round_back_white10_16"
+                android:background="@drawable/round_back_white45_16"
                 android:gravity="left"
                 android:orientation="vertical">
 
@@ -227,7 +217,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:textStyle="bold"
                         android:layout_marginTop="12dp"
                         android:layout_marginLeft="26dp"
@@ -245,13 +235,13 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="26dp"
                         android:text="정재서"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:layout_marginLeft="52dp"
                         android:text="https://github.com/mskwon02"
                         android:textStyle="bold" />
@@ -265,7 +255,7 @@
                 android:layout_marginVertical="15dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
-                android:background="@drawable/round_back_white10_16"
+                android:background="@drawable/round_back_white45_16"
                 android:gravity="left"
                 android:orientation="vertical">
 
@@ -281,7 +271,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:textStyle="bold"
                         android:layout_marginTop="12dp"
                         android:layout_marginLeft="26dp"
@@ -299,13 +289,13 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="26dp"
                         android:text="주현상"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:layout_marginLeft="52dp"
                         android:text="https://github.com/mskwon02"
                         android:textStyle="bold" />
@@ -318,13 +308,3 @@
 
 </LinearLayout>
 
-=======
-    <TextView
-        android:id="@+id/role4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="510dp"
-        android:text="개발"
-        android:layout_alignParentRight="true"/>
-</RelativeLayout>
->>>>>>> 8d08a56e014708e6fc87a6fa48b2cd53d8015a19
