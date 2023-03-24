@@ -297,8 +297,11 @@
                         android:layout_marginStart="20dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="#303334"
-                        android:text="탈퇴하기"
+                        android:text="회원 탈퇴"
+                        android:textColor="@color/text_faded"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/withdraw"/>
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
