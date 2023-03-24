@@ -23,10 +23,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
+<<<<<<< HEAD
             android:text="Setting"
             android:textColor="#FFFFFF"
             android:textSize="24dp"
             android:textStyle="bold" />
+=======
+            android:textColor="@color/text_faded"
+            android:textStyle="bold"
+            android:textSize="24dp"/>
+>>>>>>> 8d08a56e014708e6fc87a6fa48b2cd53d8015a19
     </RelativeLayout>
 
     <ScrollView
@@ -40,7 +46,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/round_back_white10_16"
+                android:background="@drawable/round_back_white45_16"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
                 android:orientation="horizontal">
@@ -49,7 +55,7 @@
                     android:layout_height="100dp"
                     android:layout_marginTop="12dp"
                     android:layout_marginLeft="12dp"
-                    android:src="@drawable/person"/>
+                    android:src="@drawable/person_icon"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -59,7 +65,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="사용자 이름"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/text_faded"
                         android:textSize="24dp"
                         android:textStyle="bold"/>
                     <TextView
@@ -67,14 +73,14 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
                         android:text="thisistestemail@test.com"
-                        android:textColor="#CCFFFFFF"/>
+                        android:textColor="#CC303334"/>
                 </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/round_back_white10_16"
+                android:background="@drawable/round_back_white45_16"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginTop="40dp"
@@ -98,7 +104,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="알림 설정"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/text_faded"
                         android:textStyle="bold"
                         android:layout_centerVertical="true"
                         android:layout_toEndOf="@+id/notification_icon"/>
@@ -128,7 +134,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Credit"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/text_faded"
                         android:textStyle="bold"
                         android:layout_centerVertical="true"
                         android:layout_toEndOf="@+id/credit"/>
@@ -144,7 +150,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/round_back_white10_16"
+                android:background="@drawable/round_back_white45_16"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginTop="12dp"
@@ -168,7 +174,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="개인정보처리방침"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/text_faded"
                         android:textStyle="bold"
                         android:layout_centerVertical="true"
                         android:layout_toEndOf="@+id/privacypolicy"/>
@@ -198,7 +204,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="이용 약관"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/text_faded"
                         android:textStyle="bold"
                         android:layout_centerVertical="true"
                         android:layout_toEndOf="@+id/termofuse"/>
@@ -214,7 +220,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/round_back_white10_16"
+                android:background="@drawable/round_back_white45_16"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginTop="12dp"
@@ -238,7 +244,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="커플 연결하기"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/text_faded"
                         android:textStyle="bold"
                         android:layout_centerVertical="true"
                         android:layout_toEndOf="@+id/connectcouple"/>
@@ -268,7 +274,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="커플 끊기"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/text_faded"
                         android:textStyle="bold"
                         android:layout_centerVertical="true"
                         android:layout_toEndOf="@+id/disconnectcouple"/>
@@ -299,7 +305,11 @@
                         android:layout_height="wrap_content"
                         android:textColor="#303334"
                         android:text="탈퇴하기"
+<<<<<<< HEAD
 
+=======
+                        android:textColor="@color/text_faded"
+>>>>>>> 8d08a56e014708e6fc87a6fa48b2cd53d8015a19
                         android:textStyle="bold"
                         android:layout_centerVertical="true"
                         android:layout_toEndOf="@+id/withdraw"/>

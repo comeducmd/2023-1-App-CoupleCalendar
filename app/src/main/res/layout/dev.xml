@@ -7,8 +7,16 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
+<<<<<<< HEAD
         android:layout_height="wrap_content"
         android:padding="16dp">
+=======
+        android:layout_height="50dp"
+        android:background="#8977ad"
+        android:text="개발자 소개"
+        android:gravity="center"
+        android:textSize="25dp" />
+>>>>>>> 8d08a56e014708e6fc87a6fa48b2cd53d8015a19
 
         <TextView
             android:layout_width="match_parent"
@@ -31,6 +39,7 @@
 
 
 
+<<<<<<< HEAD
             <LinearLayout
                 android:layout_width="350dp"
                 android:layout_height="120dp"
@@ -309,3 +318,13 @@
 
 </LinearLayout>
 
+=======
+    <TextView
+        android:id="@+id/role4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="510dp"
+        android:text="개발"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>
+>>>>>>> 8d08a56e014708e6fc87a6fa48b2cd53d8015a19
