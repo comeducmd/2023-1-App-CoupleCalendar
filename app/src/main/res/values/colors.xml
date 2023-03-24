@@ -8,7 +8,11 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+<<<<<<< HEAD
+    <color name="primary">#000000</color>
+=======
     <color name="primary">#F9F1E6</color>
+>>>>>>> 8d08a56e014708e6fc87a6fa48b2cd53d8015a19
     <color name="secondary">#FF03DAC5</color>
 
     <!--Text Color-->
