@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "576248205596",
+    "project_id": "cmd-couplecalendar",
+    "storage_bucket": "cmd-couplecalendar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576248205596:android:e42244ccd3b7b07cfdaad9",
+        "android_client_info": {
+          "package_name": "com.skku.cmdapp.couplecalendar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "576248205596-o5heq6d752adm7lrndmi74cr26a624t6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9_pILT8sIe03uQ3QtDgD6XgLh8puZODA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "576248205596-o5heq6d752adm7lrndmi74cr26a624t6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
