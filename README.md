@@ -31,5 +31,8 @@ _(안드로이드 디바이스만 지원합니다.)_<br>
         <td align="center">
             <a href="https://github.com/JJaeseo"><img src="https://avatars.githubusercontent.com/u/128131052?v=4" width="250"/></a>
         </td>
+        <td align="center">
+            <a href="https://github.com/JJaeseo"><img src="https://avatars.githubusercontent.com/u/128131052?v=4" width="250"/></a>
+        </td>
     </tr>
   </table>
