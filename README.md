@@ -1,5 +1,5 @@
 # 커플 캘린더
-Android kotlin으로 제작한 커플 캘린더
+Android-kotlin으로 제작한 커플 캘린더
 
 
 ## Demo
