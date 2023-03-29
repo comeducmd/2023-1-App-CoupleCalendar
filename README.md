@@ -23,7 +23,7 @@ _(안드로이드 디바이스만 지원합니다.)_<br>
             <a href="https://github.com/reagan99"><img src="https://avatars.githubusercontent.com/u/104223092?v=4" width="250"/></a>
         </td>
         <td align="center">
-            <a href="https://github.com/mskwon02><img src="https://avatars.githubusercontent.com/u/121784261?v=4" width="250"/></a>
+            <a href="https://github.com/mskwon02"><img src="https://avatars.githubusercontent.com/u/121784261?v=4" width="250"/></a>
         </td>
         <td align="center">
             <a href="https://github.com/fivebellhyun”><img src="https://github.com/fivebellhyun.png" width="250"/></a>
