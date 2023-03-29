@@ -3,12 +3,14 @@ package com.skku.cmdapp.couplecalendar
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.skku.cmdapp.couplecalendar.databinding.ActivityMainBinding
 import com.skku.cmdapp.couplecalendar.models.LoginActivity
 import com.skku.cmdapp.couplecalendar.models.ModelUser
 import com.skku.cmdapp.couplecalendar.view.CalendarViewActivity
+import com.skku.cmdapp.couplecalendar.view.popupdialog
 
 class MainActivity : AppCompatActivity() {
 
@@ -38,4 +40,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, LoginActivity::class.java))
         }
     }
+
+    fun diarybuttonclicked(view: View) {
+
+        val diarypopup = popupdialog(this)
+
+        diarypopup.show()
+    }
+
 }
