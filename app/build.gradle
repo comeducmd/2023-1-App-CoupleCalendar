@@ -33,6 +33,8 @@ android {
     }
     buildFeatures{
         dataBinding = true
+        //왜인지 모르지만 추가 해야 statistic 관련 binding 클래스 생성에 오류 없음
+        viewBinding true
     }
 }
 
@@ -53,5 +55,6 @@ dependencies {
     implementation platform('com.google.firebase:firebase-bom:31.2.3')
     implementation 'com.google.firebase:firebase-auth'
     implementation 'com.google.android.gms:play-services-auth:20.2.0'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
 
 }

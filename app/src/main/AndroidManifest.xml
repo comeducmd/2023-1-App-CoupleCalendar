@@ -21,6 +21,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".view.CalendarViewActivity"/>
+        <activity android:name=".view.StatisticActivity"/>
         <activity android:name=".models.LoginActivity"/>
     </application>
 

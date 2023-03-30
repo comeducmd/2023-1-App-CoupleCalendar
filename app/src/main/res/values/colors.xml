@@ -22,4 +22,11 @@
     <color name="security">#D95F69</color>
     <color name="gray">#FFCBC7D3</color>
 
+    <!--icon Color-->
+    <color name="icon_pink">#FEC5BB</color>
+    <color name="icon_green">#cdeac0</color>
+    <color name="icon_yellow">#ffe6a7</color>
+    <color name="icon_blue">#a9def9</color>
+    <color name="icon_purple">#E8C9E8</color>
+
 </resources>

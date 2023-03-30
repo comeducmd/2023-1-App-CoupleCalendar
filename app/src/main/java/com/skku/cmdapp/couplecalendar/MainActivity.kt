@@ -10,6 +10,7 @@ import com.skku.cmdapp.couplecalendar.databinding.ActivityMainBinding
 import com.skku.cmdapp.couplecalendar.models.LoginActivity
 import com.skku.cmdapp.couplecalendar.models.ModelUser
 import com.skku.cmdapp.couplecalendar.view.CalendarViewActivity
+import com.skku.cmdapp.couplecalendar.view.StatisticActivity
 import com.skku.cmdapp.couplecalendar.view.popupdialog
 
 class MainActivity : AppCompatActivity() {
@@ -38,6 +39,10 @@ class MainActivity : AppCompatActivity() {
         }
         binding.openSignUpBtn.setOnClickListener{
             startActivity(Intent(this, LoginActivity::class.java))
+        }
+
+        binding.openStatisticBtn.setOnClickListener{
+            startActivity(Intent(this, StatisticActivity::class.java))
         }
     }
 
