@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/primary">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back_btn"
+            android:padding="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="지출 통계"
+            android:layout_centerInParent="true"
+            android:textColor="@color/text_faded"
+            android:textStyle="bold"
+            android:textSize="24dp"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="뭘자꾸적으래">
+
+        <!--스크롤뷰 내부 전부 묶는 레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--이번 달 분야별 지출 통계 파트 레이아웃-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/round_back_white45_16"
+                android:orientation="vertical">
+
+                <!--(이번 달 표시 + 달 이동) 레이아웃-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp">
+
+                    <!--이전 달로 가는 삼각형 버튼-->
+                    <ImageView
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:background="@drawable/arrow_left_icon"
+                        android:layout_toLeftOf="@id/month_spending"
+                        android:layout_alignBottom="@id/month_spending"/>
+
+                    <TextView
+                        android:id="@+id/month_spending"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:text="n월 지출"
+                        android:textColor="@color/text_dark"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <!--다음 달로 가는 삼각형 버튼-->
+                    <ImageView
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:background="@drawable/arrow_right_icon"
+                        android:layout_toRightOf="@id/month_spending"
+                        android:layout_alignBottom="@id/month_spending"/>
+
+                </RelativeLayout>
+
+
+                <!--달 총 지출 안내 문구-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="총 n원"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_dark"
+                    android:gravity="center"/>
+
+                <!--이번 달 분야별 지출 파이 그래프-->
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/statistic_pieChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp" />
+
+                <!--파이차트 하단 지출 항목별 안내 목록-->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/pieChartRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+
+            </LinearLayout>
+
+            <!--저번 달, 저저번 달과 비교 파트 레이아웃-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/round_back_white45_16"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="이전 달과 비교해보세요"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="12dp"/>
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/statistic_barChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:padding="12dp"/>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

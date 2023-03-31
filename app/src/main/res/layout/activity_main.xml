@@ -25,6 +25,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="회원가입 창 열기"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/openStatisticBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="통계 창 열기"/>
     </LinearLayout>
 
 </layout>
