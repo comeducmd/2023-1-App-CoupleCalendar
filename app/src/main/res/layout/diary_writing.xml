@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- 글자 크기나 버튼, 텍스트 위치 등 전부 % 로 할 것 -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            >
+            <EditText
+                android:id="@+id/titleText"
+                android:hint="Title"
+                android:background="NULL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="XXXXy.XXm.XXd"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Weather"
+                android:textAlignment="viewEnd"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center"
+            >
+
+            <EditText
+                android:id="@+id/textField"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="NULL"
+                android:hint="일기를 작성해주세요"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cancel_button"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:text="취소하기"
+                android:layout_marginHorizontal="15dp"
+                android:background="@drawable/round_back_gray_100"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/save_button"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:text="저장하기"
+                android:layout_marginHorizontal="15dp"
+                android:background="@drawable/round_back_blue_100"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>
