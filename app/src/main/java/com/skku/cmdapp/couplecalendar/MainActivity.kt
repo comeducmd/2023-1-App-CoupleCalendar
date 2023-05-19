@@ -1,11 +1,15 @@
 package com.skku.cmdapp.couplecalendar
 
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.ktx.firestore
+import com.google.firebase.ktx.Firebase
 import com.skku.cmdapp.couplecalendar.databinding.ActivityMainBinding
 import com.skku.cmdapp.couplecalendar.models.LoginActivity
 import com.skku.cmdapp.couplecalendar.models.ModelUser
@@ -31,6 +35,7 @@ class MainActivity : AppCompatActivity() {
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         handleClick(binding)
+
     }
 
     private fun handleClick(binding: ActivityMainBinding){
