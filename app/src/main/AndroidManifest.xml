@@ -20,9 +20,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.CalendarViewActivity"/>
-        <activity android:name=".view.StatisticActivity"/>
-        <activity android:name=".models.LoginActivity"/>
+        <activity android:name=".view.CalendarViewFragment" />
+        <activity android:name=".view.StatisticFragment" />
+        <activity android:name=".models.LoginActivity" />
+        <activity android:name=".view.DiaryWritingActivity" />
     </application>
 
 </manifest>

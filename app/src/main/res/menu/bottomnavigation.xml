@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navi_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="홈" />
+    <item
+        android:id="@+id/navi_diary"
+        android:enabled="true"
+        android:icon="@drawable/diary_icon"
+        android:title="일기" />
+    <item
+        android:id="@+id/navi_account"
+        android:enabled="true"
+        android:icon="@drawable/household_account_icon"
+        android:title="가계부" />
+    <item
+        android:id="@+id/navi_statistic"
+        android:enabled="true"
+        android:icon="@drawable/statistic_icon"
+        android:title="통계" />
+    <item
+        android:id="@+id/navi_mypage"
+        android:enabled="true"
+        android:icon="@drawable/person_icon"
+        android:title="마이페이지" />
+
+
+
+</menu>

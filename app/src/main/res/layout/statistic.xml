@@ -9,21 +9,22 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp">
+        android:layout_marginTop="4dp">
 
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/back_btn"
             android:padding="8dp"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="지출 통계"
             android:layout_centerInParent="true"
-            android:textColor="@color/text_faded"
-            android:textStyle="bold"
-            android:textSize="24dp"/>
+            android:text="지출 통계"
+            android:textColor="@color/soft_black"
+            android:textSize="24dp"
+            android:textStyle="bold" />
     </RelativeLayout>
 
     <ScrollView
@@ -68,7 +69,7 @@
                         android:layout_centerInParent="true"
                         android:layout_marginTop="12dp"
                         android:gravity="center"
-                        android:text="n월 지출"
+                        android:text="6월 지출"
                         android:textColor="@color/text_dark"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -102,10 +103,18 @@
                     android:layout_height="220dp" />
 
                 <!--파이차트 하단 지출 항목별 안내 목록-->
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/pieChartRecyclerView"
+                <!--리사이클러뷰 항목들 스크롤뷰 형식으로 나오지 않고 한번에 모든 목록 보여지게 하기 위한 코드-->
+                <androidx.core.widget.NestedScrollView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="match_parent"
+                    android:fillViewport="true">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/pieChartRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false" />
+                </androidx.core.widget.NestedScrollView>
 
 
 

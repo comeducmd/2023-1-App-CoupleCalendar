@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import com.skku.cmdapp.couplecalendar.R
 
+//재서야 이건 안 쓰게 되었다...
 class popupdialog(context: Context): Dialog(context) {
     val TAG: String = "로그"
 
