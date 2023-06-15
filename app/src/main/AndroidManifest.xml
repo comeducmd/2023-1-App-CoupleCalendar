@@ -24,6 +24,7 @@
         <activity android:name=".view.StatisticFragment" />
         <activity android:name=".models.LoginActivity" />
         <activity android:name=".view.DiaryWritingActivity" />
+        <activity android:name=".view.DeleteAccountActivity"/>
     </application>
 
 </manifest>

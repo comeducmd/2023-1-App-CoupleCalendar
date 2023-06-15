@@ -90,7 +90,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:text="총 n원"
+                    android:text="총 620,000원"
                     android:textSize="32sp"
                     android:textStyle="bold"
                     android:textColor="@color/text_dark"

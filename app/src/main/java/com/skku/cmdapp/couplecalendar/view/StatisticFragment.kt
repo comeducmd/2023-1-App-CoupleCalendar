@@ -76,11 +76,11 @@ class StatisticFragment : Fragment() {
 
     //파이 차트에 들어갈 데이터 초기화 하는 함수
     fun initPieChartData(){
-        pieChartDataList.add(PieChartData(R.drawable.food_icon,"식비",200000, getDrawable(requireContext(),R.drawable.round_back_pink_100),ContextCompat.getColor(requireContext(),R.color.icon_pink)))
+        pieChartDataList.add(PieChartData(R.drawable.food_icon,"식비",150000, getDrawable(requireContext(),R.drawable.round_back_pink_100),ContextCompat.getColor(requireContext(),R.color.icon_pink)))
         pieChartDataList.add(PieChartData(R.drawable.movie_icon,"문화생활",100000,getDrawable(requireContext(),R.drawable.round_back_green_100),ContextCompat.getColor(requireContext(),R.color.icon_green)))
         pieChartDataList.add(PieChartData(R.drawable.present_icon,"선물",70000,getDrawable(requireContext(),R.drawable.round_back_blue_100),ContextCompat.getColor(requireContext(),R.color.icon_blue)))
         pieChartDataList.add(PieChartData(R.drawable.list_icon,"기타",50000,getDrawable(requireContext(),R.drawable.round_back_yellow_100),ContextCompat.getColor(requireContext(),R.color.icon_yellow)))
-        pieChartDataList.add(PieChartData(R.drawable.luggage_icon,"여행",300000,getDrawable(requireContext(),R.drawable.round_back_light_purple_100),ContextCompat.getColor(requireContext(),R.color.icon_purple)))
+        pieChartDataList.add(PieChartData(R.drawable.luggage_icon,"여행",250000,getDrawable(requireContext(),R.drawable.round_back_light_purple_100),ContextCompat.getColor(requireContext(),R.color.icon_purple)))
     }
     //위에서 초기화한 파이차트 데이터 리스트를 지출이 높은순으로 정렬하는 함수
     fun sortPieChartData(){
@@ -228,7 +228,7 @@ class StatisticFragment : Fragment() {
         monthlyTotalSpendingList.add(MonthlyTotalSpendingData(2023,1,500000))
         monthlyTotalSpendingList.add(MonthlyTotalSpendingData(2023,2,800000))
         monthlyTotalSpendingList.add(MonthlyTotalSpendingData(2023,3,300000))
-        monthlyTotalSpendingList.add(MonthlyTotalSpendingData(2023,4,600000))
+        monthlyTotalSpendingList.add(MonthlyTotalSpendingData(2023,4,620000))
 
 
     }
