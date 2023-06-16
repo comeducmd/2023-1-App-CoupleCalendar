@@ -1,7 +1,11 @@
 package com.skku.cmdapp.couplecalendar.view
 
+import android.app.AlertDialog
+import android.content.Context
+import android.content.Intent
 import android.content.res.ColorStateList
 import android.graphics.Color
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,6 +13,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.skku.cmdapp.couplecalendar.R
+import com.skku.cmdapp.couplecalendar.databinding.DiaryPopupBinding
 import java.time.LocalDate
 import java.util.*
 import kotlin.collections.ArrayList
@@ -80,12 +85,40 @@ class CalendarAdapter(private val dayList: ArrayList<Date>)
             //인터페이스를 통해서 날짜 넘겨주기
 
             var yearMonDay = "$iYear 년 $iMonth 월 $iDay 일"
+            showDialog(holder.itemView.context,yearMonDay)
+//            val popupDialog = popupdialog(holder.itemView.context,yearMonDay)
+//            popupDialog.show()
 
-            Toast.makeText(holder.itemView.context, yearMonDay, Toast.LENGTH_SHORT).show()
+            //Toast.makeText(holder.itemView.context, yearMonDay, Toast.LENGTH_SHORT).show()
+
         }
     }
 
     override fun getItemCount(): Int {
         return dayList.size
     }
+
+}
+
+//날짜 선택하면 해당날짜에 해당하는 팝업창 뜨기
+private fun showDialog(context: Context, date: String) {
+    val inflater = LayoutInflater.from(context)
+    // Binding 인스턴스를 생성합니다.
+    val binding = DiaryPopupBinding.inflate(inflater, null, false)
+
+    binding.tvDateInfo.text=date
+
+    val dialog = AlertDialog.Builder(context)
+        .setView(binding.root)
+        .create()
+
+    binding.btnWriteDiary.setOnClickListener {
+        val intent= Intent(context, DiaryWritingActivity::class.java)
+        intent.putExtra("SelectedDate",date)
+        context.startActivity(intent)
+        Log.d("MSG","btnWriteDiary")
+    }
+
+    dialog.show()
+
 }

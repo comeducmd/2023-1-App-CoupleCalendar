@@ -1,28 +1,30 @@
 package com.skku.cmdapp.couplecalendar.view
 
-import com.skku.cmdapp.couplecalendar.R
-
 import android.annotation.SuppressLint
 import android.graphics.Color
 import android.graphics.Typeface
 import android.os.Bundle
-import android.util.Half.toFloat
-import androidx.appcompat.app.AppCompatActivity
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.appcompat.content.res.AppCompatResources.getDrawable
 import androidx.core.content.ContextCompat
+import androidx.databinding.DataBindingUtil.setContentView
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.skku.cmdapp.couplecalendar.databinding.StatisticBinding
 import com.github.mikephil.charting.animation.Easing
 import com.github.mikephil.charting.charts.BarChart
 import com.github.mikephil.charting.charts.PieChart
 import com.github.mikephil.charting.components.XAxis
 import com.github.mikephil.charting.components.YAxis
 import com.github.mikephil.charting.data.*
-import com.github.mikephil.charting.formatter.PercentFormatter
 import com.github.mikephil.charting.formatter.ValueFormatter
 import com.github.mikephil.charting.utils.MPPointF
+import com.skku.cmdapp.couplecalendar.R
+import com.skku.cmdapp.couplecalendar.databinding.StatisticBinding
 
 
-class StatisticActivity : AppCompatActivity() {
+class StatisticFragment : Fragment() {
     //statistic xml바인딩 변수
     lateinit var statisticBinding:StatisticBinding
 
@@ -38,13 +40,15 @@ class StatisticActivity : AppCompatActivity() {
 
 
     @SuppressLint("MissingInflatedId")
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.statistic)
 
         //바인딩 inflate
         statisticBinding=StatisticBinding.inflate(layoutInflater)
-        setContentView(statisticBinding.root)
 
         // xml에서 그린 파이차트 뷰를 id로 불러와 파이차트 변수에 저장한다
         //pieChart =findViewById(R.id.statistic_pieChart)
@@ -65,19 +69,18 @@ class StatisticActivity : AppCompatActivity() {
         //파이차트 데이터 초기화 파트
         initBarChartData()
         makeBarChart(barChart,monthlyTotalSpendingList)
-
-
+        return statisticBinding.root
     }
 
 
 
     //파이 차트에 들어갈 데이터 초기화 하는 함수
     fun initPieChartData(){
-        pieChartDataList.add(PieChartData(R.drawable.food_icon,"식비",200000, getDrawable(R.drawable.round_back_pink_100),ContextCompat.getColor(this,R.color.icon_pink)))
-        pieChartDataList.add(PieChartData(R.drawable.movie_icon,"문화생활",100000,getDrawable(R.drawable.round_back_green_100),ContextCompat.getColor(this,R.color.icon_green)))
-        pieChartDataList.add(PieChartData(R.drawable.present_icon,"선물",70000,getDrawable(R.drawable.round_back_blue_100),ContextCompat.getColor(this,R.color.icon_blue)))
-        pieChartDataList.add(PieChartData(R.drawable.list_icon,"기타",50000,getDrawable(R.drawable.round_back_yellow_100),ContextCompat.getColor(this,R.color.icon_yellow)))
-        pieChartDataList.add(PieChartData(R.drawable.luggage_icon,"여행",300000,getDrawable(R.drawable.round_back_light_purple_100),ContextCompat.getColor(this,R.color.icon_purple)))
+        pieChartDataList.add(PieChartData(R.drawable.food_icon,"식비",150000, getDrawable(requireContext(),R.drawable.round_back_pink_100),ContextCompat.getColor(requireContext(),R.color.icon_pink)))
+        pieChartDataList.add(PieChartData(R.drawable.movie_icon,"문화생활",100000,getDrawable(requireContext(),R.drawable.round_back_green_100),ContextCompat.getColor(requireContext(),R.color.icon_green)))
+        pieChartDataList.add(PieChartData(R.drawable.present_icon,"선물",70000,getDrawable(requireContext(),R.drawable.round_back_blue_100),ContextCompat.getColor(requireContext(),R.color.icon_blue)))
+        pieChartDataList.add(PieChartData(R.drawable.list_icon,"기타",50000,getDrawable(requireContext(),R.drawable.round_back_yellow_100),ContextCompat.getColor(requireContext(),R.color.icon_yellow)))
+        pieChartDataList.add(PieChartData(R.drawable.luggage_icon,"여행",250000,getDrawable(requireContext(),R.drawable.round_back_light_purple_100),ContextCompat.getColor(requireContext(),R.color.icon_purple)))
     }
     //위에서 초기화한 파이차트 데이터 리스트를 지출이 높은순으로 정렬하는 함수
     fun sortPieChartData(){
@@ -211,7 +214,7 @@ class StatisticActivity : AppCompatActivity() {
     }
 
     fun initPieChartRecyclerView(){
-        statisticBinding.pieChartRecyclerView.layoutManager=LinearLayoutManager(this,
+        statisticBinding.pieChartRecyclerView.layoutManager=LinearLayoutManager(requireContext(),
             LinearLayoutManager.VERTICAL,false)
         statisticBinding.pieChartRecyclerView.adapter=PieChartDataAdapter(pieChartDataList)
 
@@ -225,7 +228,7 @@ class StatisticActivity : AppCompatActivity() {
         monthlyTotalSpendingList.add(MonthlyTotalSpendingData(2023,1,500000))
         monthlyTotalSpendingList.add(MonthlyTotalSpendingData(2023,2,800000))
         monthlyTotalSpendingList.add(MonthlyTotalSpendingData(2023,3,300000))
-        monthlyTotalSpendingList.add(MonthlyTotalSpendingData(2023,4,600000))
+        monthlyTotalSpendingList.add(MonthlyTotalSpendingData(2023,4,620000))
 
 
     }
@@ -288,11 +291,11 @@ class StatisticActivity : AppCompatActivity() {
         for(i in 0 until entries.size){
             //마지막(이번 달)만 분홍색
             if(i==5){
-                barChartColorList.add(ContextCompat.getColor(this,R.color.icon_pink))
+                barChartColorList.add(ContextCompat.getColor(requireContext(),R.color.icon_pink))
             }
             //나머지 달들은 회색
             else{
-                barChartColorList.add(ContextCompat.getColor(this,R.color.gray))
+                barChartColorList.add(ContextCompat.getColor(requireContext(),R.color.gray))
             }
         }
         dataSet.setColors(barChartColorList)

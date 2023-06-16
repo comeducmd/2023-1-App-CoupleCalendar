@@ -21,6 +21,7 @@
     <color name="private_account">#E6A326</color>
     <color name="security">#D95F69</color>
     <color name="gray">#FFCBC7D3</color>
+    <color name="soft_black">#353537</color>
 
     <!--icon Color-->
     <color name="icon_pink">#FEC5BB</color>
